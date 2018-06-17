@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es5", "es6", "es7", "esnext"
+    ],
+    "allowJs": false,
+    "checkJs": false,
+    "declaration": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "noEmit": false,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "isolatedModules": false,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "rootDirs": [],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "reflect-metadata"
+    ],
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": false,
+    "preserveSymlinks": true,
+
+    "sourceRoot": "./",
+    "mapRoot": "./",
+    "inlineSourceMap": false,
+    "inlineSources": false,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

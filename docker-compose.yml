@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  # Node.js API
+  api:
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - /app/node_modules/
+    ports:
+      - '3000:3000'
+    environment:
+      - FOO=bar
+      - MONGO_URI=mongodb://mongodb/mern-app
+    links:
+      - mongodb
+
+  # MongoDB
+  mongodb:
+    image: 'mongo'
+
+    volumes:
+      - ./db:/data/db
+
+    # Expose mongo on 27017 on localhost for easy inspection with Robo 3T
+    ports:
+      - '27017:27017'
